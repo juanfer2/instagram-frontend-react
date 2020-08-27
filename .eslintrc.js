@@ -22,9 +22,9 @@ module.exports = {
   },
   plugins: ['react', '@typescript-eslint'],
   settings: {
-    "react": {
-      "version": "detect"
-    }
+    react: {
+      version: 'detect',
+    },
   },
   rules: {},
 }

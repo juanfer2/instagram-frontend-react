@@ -1,20 +1,33 @@
-import React from 'react';
-import PropTypes from 'prop-types';
-import {NavbarType} from './types'
+import React from 'react'
+import { Input, Tooltip } from 'antd'
+import { CloseCircleOutlined, SearchOutlined } from '@ant-design/icons'
+import InputSearch from './defaults/inputSearch'
 
+import logoInstagram from '../../assets/images/logo.png'
 
+/*
+const NavbarStyled = styled.div`
+  color: black;
+  .narbar-content{
+    display: flex;
+    justify-content: space-between;
+  }
+`;
+*/
 
-function Navbar ({ name='myValue' }: NavbarType) {
-  return <div>hi navbar {name}</div>;
+function Navbar() {
+  return (
+    <div className="navbar">
+      <div className="navbar__container-items">
+        <div className="item-logo">
+          <img src={logoInstagram} alt="logo" />
+        </div>
+        <div>
+          <InputSearch />
+        </div>
+        <div>icons</div>
+      </div>
+    </div>
+  )
 }
-
-// https://fettblog.eu/typescript-react/prop-types/
-// visionamos\jvilladiego
-
-//Navbar.propTypes = {
-//  name: PropTypes.string.isRequired
-//}
-
-export default Navbar;
-
-
+export default Navbar

@@ -1,0 +1,12 @@
+// constants
+$left: 'left';
+
+@mixin flexbox-space-around {
+  display: flex;
+  justify-content: space-around;
+}
+
+@mixin flexbox-space-between {
+  display: flex;
+  justify-content: space-between;
+}
