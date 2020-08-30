@@ -1,6 +1,4 @@
-// constants
-$left: 'left';
-
+// Flexbox Container
 @mixin flexbox-space-around {
   display: flex;
   justify-content: space-around;
@@ -10,3 +8,15 @@ $left: 'left';
   display: flex;
   justify-content: space-between;
 }
+
+@mixin grid-responsive-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+}
+
+// Showdowns
+@mixin showdown {
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.12), 0px 2px 10px rgba(0, 0, 0, 0.12);
+}
+
+// `source /home/juanfer/.rvm/scripts/rvm`

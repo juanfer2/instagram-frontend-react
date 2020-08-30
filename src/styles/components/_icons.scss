@@ -1,0 +1,19 @@
+.icon-container {
+  display: grid;
+  text-align: center;
+  position: relative;
+}
+
+.active-icon {
+  &:after {
+    content: '';
+    position: absolute;
+    top: 27px;
+    left: 9px;
+    width: 4px;
+    height: 4px;
+    border-radius: 2px;
+    transition: bottom 0.2s ease-in-out;
+    background: #ed4956;
+  }
+}

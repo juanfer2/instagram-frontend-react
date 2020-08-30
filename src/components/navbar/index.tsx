@@ -1,9 +1,7 @@
 import React from 'react'
-import { Input, Tooltip } from 'antd'
-import { CloseCircleOutlined, SearchOutlined } from '@ant-design/icons'
 import InputSearch from './defaults/inputSearch'
-
 import logoInstagram from '../../assets/images/logo.png'
+import MenuIcons from './defaults/menuIcons'
 
 /*
 const NavbarStyled = styled.div`
@@ -22,10 +20,12 @@ function Navbar() {
         <div className="item-logo">
           <img src={logoInstagram} alt="logo" />
         </div>
-        <div>
+        <div className="navbar-input">
           <InputSearch />
         </div>
-        <div>icons</div>
+        <div>
+          <MenuIcons />
+        </div>
       </div>
     </div>
   )

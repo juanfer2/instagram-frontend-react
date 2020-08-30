@@ -1,7 +1,6 @@
 import React, { useEffect } from 'react'
 /*Redux */
 import { useDispatch, useSelector } from 'react-redux'
-import logo from './logo.svg'
 import './App.css'
 import { env } from './contants/api.constant'
 

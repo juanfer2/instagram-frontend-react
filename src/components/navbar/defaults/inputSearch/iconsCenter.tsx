@@ -1,5 +1,5 @@
 import React from 'react'
-import { CloseCircleOutlined, SearchOutlined } from '@ant-design/icons'
+import { SearchOutlined } from '@ant-design/icons'
 
 function iconsCenter() {
   return (
