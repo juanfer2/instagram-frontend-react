@@ -44,7 +44,7 @@ function Icons({ name, active }: InferProps<typeof Icons.propTypes>) {
 }
 
 Icons.propTypes = {
-  name: PropTypes.string.isRequired,
+  name: PropTypes.oneOf([COMPASS, HOUSE, SEND, HEART]).isRequired,
   active: PropTypes.bool,
 }
 

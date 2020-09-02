@@ -15,16 +15,18 @@ const NavbarStyled = styled.div`
 
 function Navbar() {
   return (
-    <div className="navbar">
-      <div className="navbar__container-items">
-        <div className="item-logo">
-          <img src={logoInstagram} alt="logo" />
-        </div>
-        <div className="navbar-input">
-          <InputSearch />
-        </div>
-        <div>
-          <MenuIcons />
+    <div className="navbar-container">
+      <div className="navbar">
+        <div className="navbar__container-items">
+          <div className="item-logo">
+            <img src={logoInstagram} alt="logo" />
+          </div>
+          <div className="navbar-input">
+            <InputSearch />
+          </div>
+          <div>
+            <MenuIcons />
+          </div>
         </div>
       </div>
     </div>

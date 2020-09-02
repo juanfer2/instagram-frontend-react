@@ -1,12 +1,13 @@
 import React, { useEffect } from 'react'
+import { BrowserRouter as Router } from 'react-router-dom'
 /*Redux */
 import { useDispatch, useSelector } from 'react-redux'
-import './App.css'
 import { env } from './contants/api.constant'
 
 /** Actions */
 import { healtAction } from './flux/actions/healt.action'
 
+import Routes from './routes'
 import Navbar from './components/navbar'
 
 function App() {
@@ -22,7 +23,12 @@ function App() {
 
   return (
     <div className="">
-      <Navbar />
+      <Router>
+        <div className="container-app">
+          <Navbar />
+          <Routes />
+        </div>
+      </Router>
     </div>
   )
 }

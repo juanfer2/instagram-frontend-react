@@ -1,6 +1,46 @@
+.card {
+  border: 1px solid var(--ligthGrey);
+  background: var(--whiteColor);
+}
 .card-notification-followers {
   background: white;
   border-radius: 5px;
-  padding: 5%;
+  padding: 15%;
   @include showdown;
+  width: 100%;
+}
+
+.card-notifications {
+  border: 1px solid var(--ligthGrey);
+  background: var(--whiteColor);
+}
+
+.card-list-avatars {
+  @include flexbox-flex-start;
+  .item-avatar {
+    text-align: center;
+    padding: 8px;
+  }
+}
+
+.card-publication {
+  .card-head {
+    @include flexbox-space-between;
+    @include bottomLine;
+    padding: 15px;
+    .avatar {
+      display: flex;
+      .username {
+        margin-left: 15px;
+        margin-top: 7px;
+        text-align: center;
+        vertical-align: middle;
+      }
+    }
+  }
+  .card-content {
+    @include bottomLine;
+  }
+  .card-footer {
+  }
 }
