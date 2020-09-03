@@ -16,9 +16,12 @@ const AvatarCircleStyled = styled.div`
 `
 
 function AvatarCircle({
+  urlAvatar,
   size,
   borderActive,
 }: InferProps<typeof AvatarCircle.propTypes>) {
+  const defaultImage =
+    'https://instagram.feoh1-1.fna.fbcdn.net/v/t51.2885-19/s150x150/17586968_692628400917167_3228496108602785792_a.jpg?_nc_ht=instagram.feoh1-1.fna.fbcdn.net&_nc_ohc=otaEZzB8vVsAX_Ucubm&oh=ca6f0fdfb41610a18e28c914679c7d1a&oe=5F786D9F'
   const {
     width,
     radius,
@@ -34,20 +37,18 @@ function AvatarCircle({
       externalCircleRadius={externalCircleRadius}
     >
       <div className="avatar-circle">
-        <img
-          src="https://instagram.feoh1-1.fna.fbcdn.net/v/t51.2885-19/s150x150/17586968_692628400917167_3228496108602785792_a.jpg?_nc_ht=instagram.feoh1-1.fna.fbcdn.net&amp;_nc_ohc=5oyNVD_OwpwAX_gOJOW&amp;oh=253073322c536055fe0c00d2ce8b4933&amp;oe=5F74791F"
-          alt="avatar-perfil"
-        />
+        <img src={urlAvatar ? urlAvatar : defaultImage} alt="avatar-perfil" />
       </div>
 
-      <div id="cont">
+      {/**<div id="cont">
         <div id="box"></div>
-      </div>
+  </div>*/}
     </AvatarCircleStyled>
   )
 }
 AvatarCircle.propTypes = {
   size: PropTypes.number,
+  urlAvatar: PropTypes.string,
   borderActive: PropTypes.bool,
 }
 /*

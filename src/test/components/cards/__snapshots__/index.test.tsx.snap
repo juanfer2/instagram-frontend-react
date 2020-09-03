@@ -1,0 +1,13 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Pruebas en <Card /> must be render component <AvatarCircle /> 1`] = `
+<div
+  className="card-notifications"
+>
+   
+  <p>
+    Card Component
+  </p>
+   
+</div>
+`;

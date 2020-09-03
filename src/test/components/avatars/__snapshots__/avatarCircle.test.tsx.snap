@@ -1,0 +1,19 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Test in <AvatarCircle /> must be render component <AvatarCircle /> 1`] = `
+<styled.div
+  externalCircleRadius="55px"
+  externalCircleWidth="65px"
+  radius="27.5px"
+  width="55px"
+>
+  <div
+    className="avatar-circle"
+  >
+    <img
+      alt="avatar-perfil"
+      src="https://instagram.feoh1-1.fna.fbcdn.net/v/t51.2885-19/s150x150/17586968_692628400917167_3228496108602785792_a.jpg?_nc_ht=instagram.feoh1-1.fna.fbcdn.net&_nc_ohc=otaEZzB8vVsAX_Ucubm&oh=ca6f0fdfb41610a18e28c914679c7d1a&oe=5F786D9F"
+    />
+  </div>
+</styled.div>
+`;

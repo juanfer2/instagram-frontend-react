@@ -1,4 +1,6 @@
 import React from 'react'
+import { IMAGE } from '../../../contants/card.constant'
+
 import CardAvatarList from '../../cards/cardAvatarList'
 import CardPublicationWrapper from '../../cards/cardPublications/cardPublicationWrapper'
 function Home() {
@@ -6,8 +8,10 @@ function Home() {
     <div>
       <CardAvatarList />
       <CardPublicationWrapper
-        type={'VIDEO'}
-        src={'https://www.w3schools.com/html/mov_bbb.mp4'}
+        type={IMAGE}
+        src={
+          'https://s3.amazonaws.com/arc-wordpress-client-uploads/infobae-wp/wp-content/uploads/2017/12/06113250/Eruca-por-Agust%C3%ADn-Dusserre-DSC_2338.jpg'
+        }
         iconAvatar="AVATAR ICON"
         username="USERNAME"
       />

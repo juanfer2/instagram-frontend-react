@@ -263,6 +263,7 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  cursor: pointer;
 }
 
 .card-publication .card-head .avatar .username {
@@ -272,7 +273,36 @@ body {
   vertical-align: middle;
 }
 
+.card-publication .card-head .menu {
+  cursor: pointer;
+  margin-top: 10px;
+  text-align: center;
+  vertical-align: middle;
+}
+
 .card-publication .card-content {
   border-bottom: 1px solid var(--ligthGrey);
+}
+
+.card-publication .card-content img {
+  width: 100%;
+}
+
+.card-publication .card-footer {
+  padding: 15px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+}
+
+.card-publication .card-footer .actions-icons {
+  display: -ms-grid;
+  display: grid;
+  gap: 1em;
+  -ms-grid-columns: 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr;
 }
 /*# sourceMappingURL=main.css.map */

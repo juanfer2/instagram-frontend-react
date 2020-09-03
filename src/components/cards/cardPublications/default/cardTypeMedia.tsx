@@ -8,20 +8,23 @@ import { IMAGE, VIDEO } from '../../../../contants/card.constant'
 function CardTypeMedia() {
   const context: any = useContext(CardPublicationContext)
 
-  const { type, url }: { type: string; url: string } = context
+  const { type, src }: { type: string; src: string } = context
+
+  console.log(type)
+  console.log(src)
 
   const rederMedia = (type: string) => {
     switch (type) {
       case VIDEO:
         return (
           <div>
-            <video src={url}></video>
+            <video src={src}></video>
           </div>
         )
       case IMAGE:
         return (
           <div>
-            <img src={url}></img>
+            <img src={src}></img>
           </div>
         )
 
