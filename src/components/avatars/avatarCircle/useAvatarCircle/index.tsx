@@ -1,5 +1,5 @@
 import { useState } from 'react'
-import { AvatarCircleStyledProps } from '../../../interfaces/components/avatarsInteface/avatar.interface'
+import { AvatarCircleStyledProps } from '../../../../interfaces/components/avatarsInteface/avatar.interface'
 
 export const useAvatarCircle = (size: number | null | undefined) => {
   const sizeCircle: number = size ? size : 50

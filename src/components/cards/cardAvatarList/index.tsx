@@ -2,26 +2,15 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import Card from '../'
 import AvatarCircle from '../../avatars/avatarCircle'
+import Avatar from '../../avatars/avatar'
 function CardAvatarList({}) {
   return (
     <Card>
       <div className="card-list-avatars">
-        <div className="item-avatar">
-          <AvatarCircle size={55} />
-          <span>juanfer</span>
-        </div>
-        <div className="item-avatar">
-          <AvatarCircle size={55} />
-          <span>juanfer</span>
-        </div>
-        <div className="item-avatar">
-          <AvatarCircle size={55} />
-          <span>juanfer</span>
-        </div>
-        <div className="item-avatar">
-          <AvatarCircle size={55} />
-          <span>juanfer</span>
-        </div>
+        <Avatar size={55} username={'Juanfer'} />
+        <Avatar size={55} username={'Juanfer'} />
+        <Avatar size={55} username={'Juanfer'} />
+        <Avatar size={55} username={'Juanfer'} />
       </div>
     </Card>
   )

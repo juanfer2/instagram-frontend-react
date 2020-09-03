@@ -1,7 +1,7 @@
 import React from 'react'
 import PropTypes, { InferProps } from 'prop-types'
 import styled, { css } from 'styled-components'
-import { AvatarCircleStyledProps } from '../../interfaces/components/avatarsInteface/avatar.interface'
+import { AvatarCircleStyledProps } from '../../../interfaces/components/avatarsInteface/avatar.interface'
 import { useAvatarCircle } from './useAvatarCircle'
 
 const AvatarCircleStyled = styled.div`
